@@ -1,0 +1,27 @@
+{ "otherDataCouldGoHere": null,
+    "directives": [
+      { "setBackground": "backgrounds/default.png" },
+      { "setLeftCharacters": null },
+      { "setRightCharacters": "obligatoryTsundere" },
+      { "playMusic": "music/cyberpunkMacarena.ogg" },
+      { "delay": 3 },
+      { "text": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world." },
+      { "animation": "rightCharacterBonk" },
+      { "text": "Main-character-san! Are you reciting the first chapter of Moby Dick again?" },
+      { "choice":
+        { "options": [
+          { "text": "Yes, and I'll fuckin' do it again, dammit!",
+            "moveToNode": "nodes/literaryIntro.json",
+            "grantFlag": "literary" },
+          { "text": "Sorry, Obligatory-Tsundere-chan, I was distracted for a moment. Tell me again about the all-girls school that I'm about to attend for weak plot reasons!",
+            "moveToNode": "nodes/datingSimRouteIntro.json",
+            "grantFlag": "animeProtagonist" },
+          { "text": "Reciting? Take this harpoon. We're living it.",
+            "checkFlag": "hasHarpoon",
+            "grantFlag": "seriousAhabVibes",
+            "moveToNode": "nodes/mobyDickRouteIntro.json" }
+          ]
+        }
+      }
+    ]
+}

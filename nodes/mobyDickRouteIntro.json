@@ -1,0 +1,19 @@
+{
+  "directives": [
+    { "setBackground": "backgrounds/whalingShip.png" },
+    { "text": "Obligatory Tsudere had been my friend since childhood. We never had any romantic feelings toward each other, but now that she was starting to grow up, I realized she would be an excellent partner in my lifelong quest to slay the white whale which had claimed my leg and my dignity." },
+    { "animation": "rightCharacterBonk" },
+    { "text": "Main-character-san! Are we actually IN Moby Dick right now? That's animal cruelty! I would like to be excluded from this narrative!" },
+    { "choice":
+      {"options": [
+        { "text": "Sorry, let's go back to the generic anime plot.",
+          "moveToNode": "nodes/datingSimRouteIntro.json"
+        },
+        { "text": "Grab a rope, sailor, there's a storm coming!",
+          "comment": "Without a destination, we just continue the directives."
+        }
+      ]
+    },
+    { "text": "The ship pitched and rolled as the storm swept in." }
+  ]
+}

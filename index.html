@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="vnSystem.js"></script>
+    <script type="text/javascript">
+      const system = new VNSystem({rootContentUrl: 'root.json', rootElementSelector: '#container'});
+      system.start();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="background"></div>
+      <div id="leftCharacterContainer"></div>
+      <div id="rightCharacterContainer"></div>
+      <div id="textContainer"></div>
+      <div id="choiceContainer"></div>
+    </div>
+  </body>
+</html>
